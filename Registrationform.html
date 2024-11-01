@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="shortcut icon" type="image/png" href="image/favicon.png">
+</head>
+<body>
+    <h2>Admission form</h2>
+    <form action="backend.hp" target="_blank" method="get" novalidate>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname"  size="60" maxlength="30" placeholder="john"> <br> <br>
+        <label for="lname">last name:</label>
+        <input type="text" id="lname" value="emma"> <br> <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email"  name="email" placeholder="email" required><br> <br>
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" value="password"> <br> <br>
+        <label for="pin">pin:</label>
+        <input type="password" id="pin" value="****" maxlength="4" size="3"> <br> <br>
+        <label for="pn">Phone number:</label>
+        <input type="text" id="pn" value="phone number"><br> <br>
+        <label for="file">choose a file</label>
+        <input type="file" id="file" name="files" multiple> <br> <br>
+
+        <input type="submit" value="submit">
+        <input type="reset"  value="reset">
+    </form>
+<br>
+    <form action="backend" method="get">
+        <label for="cars">choose a car</label>
+        <select name="cars" id="cars">
+            <option value="toyota">toyota</option>
+            <option value="venza">venza</option>
+            <option value="carmy">carmy</option>
+            <option value="benz">benz</option>
+        </select> 
+        <input type="submit" value="submit">
+    </form>
+<br>
+    <form action="action page php." target="_blank">
+<textarea name="message" rows="10" cols="30" style="height: 200px; width: 200px;">i am here</textarea>
+<input type="submit" value="submit">
+    </form>
+
+    <button  type="butock" onclick="alert('HELLO WORLD!')">click me!</button>
+    
+    <h1>Grouping Form Data with Fieldset</h1> <br>
+    <p>The fieldset element is used to group related data in a form, 
+        and the legend element defines a caption for the fieldset element.</p> <br>
+    <form action="">
+        <fieldset>
+            <legend>Personia:</legend>
+            <label for="name"> Names: </label>
+            <input type="text" id="name" value="ojeabuo emmanuel"> <br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" value="example@gmail.com"> <br>
+            <label for="ph">Phone number:</label>
+            <input type="text" id="ph" value="+2348135301934"><br>
+            <input type="submit" value="submit">
+        </fieldset>
+    </form>
+    <br> <br>
+
+    
+ <br>
+ <form action="">
+    <input list="browsers" name="browsers">
+    <datalist id="browsers">
+        <option >Edge</option>
+        <option >Firefox</option>
+        <option >chrome</option>
+        <option >opera</option>
+        <option >sefari</option>
+    </datalist>
+    <input type="submit" value="submit">
+ </form>
+
+ <form action="">
+    <input type="radio" id="html" name="fav_language" value="HTML">
+    <label for="html"> HTML</label> <br>
+    <input type="radio" id="css" name="fav_language" value="CSS">
+    <label for="css">CSS</label> <br>
+    <input type="radio" id="javascript" name="fav_language" value="JAVA SCRIPT">
+    <label for="javascript">JAVA SCRIPT</label><br>
+    <input type="submit" value="submit">
+ </form>
+ <br> <br> <br> 
+    
+ <form action="">
+<input type="checkbox" id="v1" value="vehicle">
+<label for="v1">I have a bike</label> <br>
+<input type="checkbox" id="v2" value="car">
+<label for="v2">I have a car</label> <br>
+<input type="checkbox" id="v3" value="">
+<label for="v3"> I have a truck</label> <br>
+<input type="submit" value="submit">
+ </form>
+ <br>
+
+ <form action="">
+    <label for="birthday"> Birthday</label>
+    <input type="date" id="birthday" value="birthday">
+    <input type="submit" value="submit">
+ </form>
+<br> <br>
+
+<form action="">
+    <label for="datemini">Enter a date after 2000-01-01:</label>
+    <input type="date" id="datemini" value="date" min="2000-01-02">
+    <br> <br>
+    <label for="datemax">Enter a date before 1980-01-01:</label>
+    <input type="date" id="datemax" value="date" max="1980-01-01"><br>
+    <input type="submit" valu="submit">
+</form>
+<br> <br> <br>
+
+<form action="">
+    <label for="date time">Birthday (date and time)</label>
+    <input type="datetime-local" id="date time" value="date time">
+    <input type="submit" vaue="submit">
+</form>
+<br> <br>
+
+<form action="">
+    <label for="selectfile">selectfile</label>
+    <input type="file" id="selectfile" value="selectfile">
+    <br>
+    <input type="submit" value="submit">
+</form>
+<br>
+<form action="">
+<label for="quantity"> Quantity:</label>
+<input type="number" id="quantity" min="10" max="500" step="20" value="50">
+<input type="submit" value="submit">
+</form>
+
+<br>
+<form action="">
+<label for="range"> Volume (between 0 and 50):</label>
+<input type="range" id="range" min="10" max="50">
+<input type="submit" value="submit">
+</form>
+
+<form action="">
+    <label for="search">search:</label>
+    <input type="search" id="search" value="search here">
+    <input type="submit" value="submit">
+
+    <br> <br>
+    <form action="">
+        <label for="webpage">submit your linked profile:</label>
+        <input type="url" id="webpage" value="linken url">
+        <input type="submit" value="submit">
+</form>
+<br> <br>
+<form action=""> 
+<label for="point">points:</label>
+<input type="number" name="points" id="point" step="4">
+<input type="submit" value="submt">
+</form>
+<br>
+
+<canvas id="my canvas" width="200" height="100" style="border:2px solid #000000;"> 
+    Your browser does not support the HTML canvas tag.
+</canvas>
+
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+    Your browser does not support the HTML canvas tag.
+    </canvas>
+<br> <br>
+    <svg hight="100" width="100">
+        <circle  cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow"/>
+        Sorry, your browser does not support inline SVG
+    </svg>
+
+    <br>
+    <svg height="400" width="120">
+        <rect x="10" y="10" height="200" width="120" stroke="red" strokewidth="6" fill="blue"/>
+        Sorry, your browser does not support inline SVG.
+    </svg>
+    <br>
+    
+
+    <video controls width="420" height="345" autoplay muted>
+        <source src="video/Zig Zag Representation Of Alkanes(1).mp4"  type="video/mp4">
+        This video does not support your browser
+    </video>
+<br> <br>
+
+<iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" width="420" height="345">
+
+</iframe>
+<br><br>
+<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+<br>
+
+</body>
+</html>
